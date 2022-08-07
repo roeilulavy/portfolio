@@ -1,0 +1,133 @@
+.Header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgb(137, 164, 252) 100%);
+  margin: 0;
+  padding: 100px 0 0;
+}
+
+.Header__background {
+  position: relative;
+  width: 100%;
+  margin: 100px 0 0 0;
+  padding: 0;
+}
+
+.Header__container {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  margin: 0;
+  padding: 0;
+}
+
+.Header__text-container {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 0;
+  padding: 0;
+}
+
+.Header__pre-title {
+  font-weight: 100;
+  font-size: 2rem;
+  margin: 0;
+  padding: 20px 0;
+}
+
+.Header__title {
+  font-size: 3.5rem;
+  margin: 0;
+  padding: 10px 0;
+}
+
+.Header__subtitle {
+  font-weight: 500;
+  font-size: 2rem;
+  margin: 0;
+  padding: 20px 0;
+}
+
+.Header__text {
+  max-width: 560px;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  margin: 0;
+  padding: 10px 0 0;
+}
+
+.Header__profile {
+  width: 350px;
+  height: 350px;
+  background-color: #c9b9b9;
+  background-image: url('../../images/Profile/profile.png');
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: 80%;
+  border: none;
+  border-radius: 200px;
+  box-shadow: 0 5px 5px 5px rgba(0, 0, 0, 0.5);
+  padding: 5px;
+}
+
+@media screen and (max-width:900px) {
+  .Header__pre-title {
+    font-weight: 100;
+    font-size: 1.5rem;
+    padding: 10px 0;
+  }
+
+  .Header__title {
+    font-size: 3rem;
+    padding: 10px 0;
+  }
+
+  .Header__subtitle {
+    font-weight: 500;
+    font-size: 1.5rem;
+    padding: 10px 0;
+  }
+
+  .Header__text {
+    max-width: 560px;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    padding: 10px 0 0;
+  }
+
+  .Header__profile {
+    width: 250px;
+    height: 250px;
+  }
+}
+
+@media screen and (max-width:700px) {
+  .Header {
+    padding: 20px 0 0;
+  }
+
+  .Header__background {
+    margin: 50px 0 0 0;
+  }
+
+  .Header__container {
+    flex-direction: column;
+  }
+
+  .Header__text-container {
+    width: 100%;
+    align-items: center;
+  }
+
+  .Header__text {
+    text-align: center;
+    padding: 10px 20px 0;
+  }
+}
