@@ -42,21 +42,12 @@
 }
 
 .Projects__item-image {
-  width: 100%;
+  width: 70%;
   display: flex;
   justify-content: center;
   background-color: white;
-  color: white;
-}
-
-.Projects__item-image {
-  width: 70%;
   border: 2px solid black;
   border-radius: 10px;
-  cursor: pointer;
-}
-
-.Projects__item-image:hover {
   cursor: pointer;
 }
 
@@ -101,6 +92,11 @@
     font-size: 1rem;
     line-height: 1.5rem;
     padding: 20px 0 50px;
+  }
+
+  .Projects__item {
+    gap: 30px;
+    padding: 40px;
   }
 
   .Projects__item-title {
