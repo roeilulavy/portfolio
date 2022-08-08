@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.f8a0352c.css",
-    "main.js": "/portfolio/static/js/main.37ba905f.js",
+    "main.css": "/portfolio/static/css/main.38ef3324.css",
+    "main.js": "/portfolio/static/js/main.5bfc140b.js",
     "static/media/pokedex_colage.PNG": "/portfolio/static/media/pokedex_colage.ef18e89f2d3b56a8b1a0.PNG",
     "static/media/news_colage.png": "/portfolio/static/media/news_colage.025bec62559e44cd1fe6.png",
     "static/media/around_colage.png": "/portfolio/static/media/around_colage.e1794ed51273d3723246.png",
@@ -19,11 +19,11 @@
     "static/media/css_icon.png": "/portfolio/static/media/css_icon.21e109585078dd17afdc.png",
     "static/media/git_icon.png": "/portfolio/static/media/git_icon.508d5568ad61a33634f3.png",
     "index.html": "/portfolio/index.html",
-    "main.f8a0352c.css.map": "/portfolio/static/css/main.f8a0352c.css.map",
-    "main.37ba905f.js.map": "/portfolio/static/js/main.37ba905f.js.map"
+    "main.38ef3324.css.map": "/portfolio/static/css/main.38ef3324.css.map",
+    "main.5bfc140b.js.map": "/portfolio/static/js/main.5bfc140b.js.map"
   },
   "entrypoints": [
-    "static/css/main.f8a0352c.css",
-    "static/js/main.37ba905f.js"
+    "static/css/main.38ef3324.css",
+    "static/js/main.5bfc140b.js"
   ]
 }
