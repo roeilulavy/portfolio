@@ -1,0 +1,210 @@
+.ImageSlider {
+  max-width: 1200px;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(128, 128, 128, 0.8);
+  visibility: hidden;
+  opacity: 0;
+  z-index: 10;
+  margin: 0 auto;
+  padding: 40px;
+  transition: visibility 0.5s, opacity 0.5s;
+}
+
+.ImageSlider-open {
+  visibility: visible;
+  opacity: 1;
+}
+
+.ImageSlider__button {
+  width: 45px;
+  height: 45px;
+  background-color: transparent;
+  border: none;
+  background-image: url('../../images/Icons/close.png');
+  background-position: center;
+  background-size: cover;
+  cursor: pointer;
+  align-self: flex-end;
+  margin: 5px 0;
+  padding: 0;
+}
+
+.ImageSlider__image-container {
+  width: 100%;
+  height: 50%;
+  position: relative;
+  border-radius: 10px;
+  margin: 0;
+  padding: 0;
+  z-index: 1;
+}
+
+.ImageSlider__left-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  left: 0;
+  font-size: 45px;
+  color: white;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin: 0;
+  padding: 50px 10px;
+}
+
+.ImageSlider__right-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  right: 0;
+  font-size: 45px;
+  color: white;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin: 0;
+  padding: 50px 10px;
+}
+
+.ImageSlider__dots-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 0 0 10px 10px;
+  margin: -2px 0 0;
+  padding: 10px 0;
+  z-index: 0;
+}
+
+.ImageSlider__dots {
+  font-size: 20px;
+  cursor: pointer;
+  margin: 0 3px;
+}
+
+.ImageSlider__text-container {
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+  margin: 45px 0 0;
+  padding: 0;
+}
+
+.ImageSlider__title {
+  font-size: 2rem;
+  margin: 0;
+  padding: 25px;
+}
+
+.ImageSlider__subtitle {
+  font-size: 1.3rem;
+  margin: 0;
+  padding: 0 25px;
+}
+
+.ImageSlider__description {
+  margin: 0;
+  padding: 25px;
+}
+
+.ImageSlider__text {
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+  margin: 0;
+  padding: 5px 0;
+}
+
+@media screen and (max-width:900px) {
+  .ImageSlider__title {
+    font-size: 1.2rem;
+    padding: 20px;
+  }
+
+  .ImageSlider__subtitle {
+    font-size: 1.1rem;
+    padding: 0 20px;
+  }
+
+  .ImageSlider__description {
+    padding: 20px;
+  }
+
+  .ImageSlider__text {
+    font-size: 1rem;
+    line-height: 1.3rem;
+  }
+}
+
+@media screen and (max-width:700px) {
+  .ImageSlider {
+    padding: 10px;
+  }
+
+  .ImageSlider__button {
+    width: 30px;
+    height: 30px;
+    margin: 3px 0;
+  }
+
+  .ImageSlider__image-container {
+    height: 60%;
+  }
+
+  .ImageSlider__left-arrow {
+    font-size: 25px;
+    padding: 30px 5px;
+  }
+  
+  .ImageSlider__right-arrow {
+    font-size: 25px;
+    padding: 30px 5px;
+  }
+
+  .ImageSlider__dots-container {
+    margin: -2px 0 0;
+    padding: 5px 0;
+    z-index: 0;
+  }
+  
+  .ImageSlider__dots {
+    font-size: 10px;
+    cursor: pointer;
+    margin: 0 3px;
+  }
+
+  .ImageSlider__text-container {
+    width: 100%;
+    height: 40%;
+    background-color: white;
+    border-radius: 10px;
+    margin: 20px 0 0;
+    padding: 0;
+    overflow: auto;
+  }
+
+  .ImageSlider__title {
+    font-size: 1.1rem;
+    padding: 10px 20px;
+  }
+
+  .ImageSlider__subtitle {
+    font-size: 1rem;
+    padding: 0 20px;
+  }
+
+  .ImageSlider__description {
+    padding: 10px 20px;
+  }
+
+  .ImageSlider__text {
+    font-size: 0.8rem;
+    line-height: 1.1rem;
+  }
+}
