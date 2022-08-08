@@ -1,15 +1,29 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.38ef3324.css",
-    "main.js": "/portfolio/static/js/main.5bfc140b.js",
+    "main.css": "/portfolio/static/css/main.7b20be3b.css",
+    "main.js": "/portfolio/static/js/main.b2bf0b06.js",
+    "static/media/news2.png": "/portfolio/static/media/news2.5e87845fc33b4cd42264.png",
+    "static/media/news5.png": "/portfolio/static/media/news5.8daff980f284b0da133c.png",
+    "static/media/news1.png": "/portfolio/static/media/news1.2b852773d313ddbf22d5.png",
     "static/media/pokedex_colage.PNG": "/portfolio/static/media/pokedex_colage.ef18e89f2d3b56a8b1a0.PNG",
     "static/media/news_colage.png": "/portfolio/static/media/news_colage.025bec62559e44cd1fe6.png",
+    "static/media/Pokedex2.png": "/portfolio/static/media/Pokedex2.436fbc1dad544524572a.png",
+    "static/media/around1.png": "/portfolio/static/media/around1.53d754174251f1353638.png",
     "static/media/around_colage.png": "/portfolio/static/media/around_colage.e1794ed51273d3723246.png",
+    "static/media/around4.png": "/portfolio/static/media/around4.5af11a919a448f862716.png",
+    "static/media/news3.png": "/portfolio/static/media/news3.1cf750a4e7b94d6c8ab3.png",
+    "static/media/news4.png": "/portfolio/static/media/news4.16afbe2dd4f32e8aa573.png",
+    "static/media/Pokedex3.png": "/portfolio/static/media/Pokedex3.359ca074bbcc2d907666.png",
+    "static/media/Pokedex1.png": "/portfolio/static/media/Pokedex1.9375859a1927b6e36b0a.png",
     "static/media/ptt_colage.png": "/portfolio/static/media/ptt_colage.bc92d736ad915913c39e.png",
+    "static/media/around3.png": "/portfolio/static/media/around3.cb79750d9b8f628aa107.png",
+    "static/media/around2.png": "/portfolio/static/media/around2.db38594c48c0e5780d16.png",
     "static/media/success_icon.png": "/portfolio/static/media/success_icon.d3d9a3a0581d718ea3ee.png",
     "static/media/profile.png": "/portfolio/static/media/profile.262dd914347ecd28d174.png",
+    "static/media/Pokedex4.png": "/portfolio/static/media/Pokedex4.dabdf968396865dab8a9.png",
     "static/media/sql_icon.png": "/portfolio/static/media/sql_icon.1e80e502e498c641be05.png",
     "static/media/api_icon.png": "/portfolio/static/media/api_icon.1e9f5805c534329db465.png",
+    "static/media/ptt2.jpg": "/portfolio/static/media/ptt2.b25996be5aa2e1fcd7bd.jpg",
     "static/media/mongo_icon.png": "/portfolio/static/media/mongo_icon.a7ec7ad31294dd5adade.png",
     "static/media/react_icon.png": "/portfolio/static/media/react_icon.8395391cdd34975009bf.png",
     "static/media/redux_icon.png": "/portfolio/static/media/redux_icon.bc59ceed0d970a3dac25.png",
@@ -18,12 +32,15 @@
     "static/media/html_icon.png": "/portfolio/static/media/html_icon.c74e8ecc61f33b415b73.png",
     "static/media/css_icon.png": "/portfolio/static/media/css_icon.21e109585078dd17afdc.png",
     "static/media/git_icon.png": "/portfolio/static/media/git_icon.508d5568ad61a33634f3.png",
+    "static/media/ptt1.png": "/portfolio/static/media/ptt1.ced62563d7cfec9336a4.png",
+    "static/media/around6.png": "/portfolio/static/media/around6.0707089a8783385995cf.png",
+    "static/media/around5.png": "/portfolio/static/media/around5.6773b8ff1c206dec2db5.png",
     "index.html": "/portfolio/index.html",
-    "main.38ef3324.css.map": "/portfolio/static/css/main.38ef3324.css.map",
-    "main.5bfc140b.js.map": "/portfolio/static/js/main.5bfc140b.js.map"
+    "main.7b20be3b.css.map": "/portfolio/static/css/main.7b20be3b.css.map",
+    "main.b2bf0b06.js.map": "/portfolio/static/js/main.b2bf0b06.js.map"
   },
   "entrypoints": [
-    "static/css/main.38ef3324.css",
-    "static/js/main.5bfc140b.js"
+    "static/css/main.7b20be3b.css",
+    "static/js/main.b2bf0b06.js"
   ]
 }
