@@ -18,18 +18,34 @@ export default function ContactMe() {
 
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(false);
+  const [errorMessage, setErrorMessage] = useState('');
   const [done, setDone] = useState(false);
+
+  function isValidEmail(email) {
+    return /\S+@\S+\.\S+/.test(email);
+  };
 
 
   const handleSubmit = (e) => {
     e.preventDefault();
     setLoading(true);
 
-    if(name === '' || email === '' || message === '') {
+    if(!name || !email || !message) {
       setError(true);
+      setErrorMessage('Please fill all the fields!');
       setLoading(false);
       return;
     };
+
+    if (!isValidEmail(email)) {
+      setError(true);
+      setErrorMessage('Email is invalid!');
+      setLoading(false);
+      return;
+    } else {
+      setError(false);
+      setLoading(true);
+    }
 
     emailjs.sendForm(
       "service_22q1blm",
@@ -41,7 +57,7 @@ export default function ContactMe() {
       setDone(true);
     }).catch(err => 
       console.log(err)
-    )
+    );
   };
 
   return (
@@ -85,13 +101,33 @@ export default function ContactMe() {
             <>
               <h3 className='ContactMe__form-title'>Have a question or want to work together? <br/>Leave your details below.</h3>
               <label className='ContactMe__form-label'>Name</label>
-              <input className='ContactMe__form-input' type='text' name='user_name' onChange={e => setName(e.target.value)}/>
+              <input
+                className='ContactMe__form-input'
+                type='text'
+                name='user_name'
+                onChange={e => setName(e.target.value)}
+                required
+              />
               <label className='ContactMe__form-label'>Email</label>
-              <input className='ContactMe__form-input' type='text' name='user_email' onChange={e => setEmail(e.target.value)}/>
+              <input
+                className='ContactMe__form-input'
+                type='text'
+                name='user_email'
+                autoComplete='email'
+                onChange={e => setEmail(e.target.value)}
+                required  
+              />
               <label className='ContactMe__form-label'>Message</label>
-              <textarea className='ContactMe__form-input-text' type='text' name='message' onChange={e => setMessage(e.target.value)}/>
-              {error && <p className='ContactMe__form-error'>*Please fill all the fields!</p>}
-              <button className={`${loading ? 'ContactMe__form-button-loading' : 'ContactMe__form-button'}`}>{loading ? 'Sending...' : 'Submit'}</button>
+              <textarea
+               className='ContactMe__form-input-text'
+               type='text' name='message'
+               onChange={e => setMessage(e.target.value)}
+               required
+              />
+              {error && <p className='ContactMe__form-error'>{errorMessage}</p>}
+              <button className={`${loading ? 'ContactMe__form-button-loading' : 'ContactMe__form-button'}`}>
+                {loading ? 'Sending...' : 'Submit'}
+              </button>
             </>
           }
         </form>
