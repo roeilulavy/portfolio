@@ -1,9 +1,15 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import './ImageSlider.css';
 
 export default function ImageSlider({ slides, title, subtitle, description, isPopupOpen, setIsPopupOpen }) {
 
   const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    if(!isPopupOpen) {
+      setCurrentIndex(0);
+    }
+  }, [isPopupOpen]);
 
   const imageStyle = {
     width: "100%",
