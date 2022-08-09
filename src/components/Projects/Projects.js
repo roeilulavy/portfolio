@@ -127,49 +127,51 @@ export default function Projects() {
   }
 
   return (
-    <div className='Projects'>
+    <section className='Projects'>
       <h2 className='Projects__title'>What I've been working on</h2>
       <p className='Projects__text'>I like to stay busy and always have a project in the works. <br /> Take a look at some of my applications I've dedicated my time to.</p>
 
-      <div className='Projects__item'>
-        <div className='Projects__item-description'>
-          <h3 className='Projects__item-title'>News‑explorer</h3>
-          <p className='Projects__item-text'>Search and reveal the latest worldwide news.</p>
-          <p className='Projects__item-link' onClick={() => openPopup(1)}>Read more ›</p>
-          <a className='Projects__item-link' href='https://github.com/roeilulavy/news-explorer-frontend' target='_blank' rel='noreferrer'>View repository ›</a>
-        </div>
-        <img className='Projects__item-image' src={news_colage} alt='News' onClick={() => openPopup(1)} />
-      </div>
+      <ul>
+        <li className='Projects__item'>
+          <div className='Projects__item-description'>
+            <h3 className='Projects__item-title'>News‑explorer</h3>
+            <h4 className='Projects__item-text'>Search and reveal the latest worldwide news.</h4>
+            <p className='Projects__item-link' onClick={() => openPopup(1)}>Read more ›</p>
+            <a className='Projects__item-link' href='https://github.com/roeilulavy/news-explorer-frontend' target='_blank' rel='noreferrer'>View repository ›</a>
+          </div>
+          <img className='Projects__item-image' src={news_colage} alt='News' onClick={() => openPopup(1)} />
+        </li>
 
-      <div className='Projects__item'>
-        <div className='Projects__item-description'>
-          <h3 className='Projects__item-title'>Around The U.S </h3>
-          <p className='Projects__item-text'>A social photos sharing website.</p>
-          <p className='Projects__item-link' onClick={() => openPopup(2)}>Read more ›</p>
-          <a className='Projects__item-link' href='https://github.com/roeilulavy/around-react' target='_blank' rel='noreferrer'>View repository ›</a>
-        </div>
-        <img className='Projects__item-image' src={around_colage} alt='Around the U.S' onClick={() => openPopup(2)} />
-      </div>
+        <li className='Projects__item'>
+          <div className='Projects__item-description'>
+            <h3 className='Projects__item-title'>Around The U.S </h3>
+            <h4 className='Projects__item-text'>A social photos sharing website.</h4>
+            <p className='Projects__item-link' onClick={() => openPopup(2)}>Read more ›</p>
+            <a className='Projects__item-link' href='https://github.com/roeilulavy/around-react' target='_blank' rel='noreferrer'>View repository ›</a>
+          </div>
+          <img className='Projects__item-image' src={around_colage} alt='Around the U.S' onClick={() => openPopup(2)} />
+        </li>
 
-      <div className='Projects__item'>
-        <div className='Projects__item-description'>
-          <h3 className='Projects__item-title'>Pokedex</h3>
-          <p className='Projects__item-text'>Explore and learn about variant of Pokemons.</p>
-          <p className='Projects__item-link' onClick={() => openPopup(3)}>Read more ›</p>
-          <a className='Projects__item-link' href='https://github.com/roeilulavy/react-pokedex' target='_blank' rel='noreferrer'>View repository ›</a>
-        </div>
-        <img className='Projects__item-image' src={pokedex_colage} alt='Pokedex' onClick={() => openPopup(3)} />
-      </div>
+        <li className='Projects__item'>
+          <div className='Projects__item-description'>
+            <h3 className='Projects__item-title'>Pokedex</h3>
+            <h4 className='Projects__item-text'>Explore and learn about variant of Pokemons.</h4>
+            <p className='Projects__item-link' onClick={() => openPopup(3)}>Read more ›</p>
+            <a className='Projects__item-link' href='https://github.com/roeilulavy/react-pokedex' target='_blank' rel='noreferrer'>View repository ›</a>
+          </div>
+          <img className='Projects__item-image' src={pokedex_colage} alt='Pokedex' onClick={() => openPopup(3)} />
+        </li>
 
-      <div className='Projects__item'>
-        <div className='Projects__item-description'>
-          <h3 className='Projects__item-title'>PTT-Websocket</h3>
-          <p className='Projects__item-text'>A real-time communication PTT website.</p>
-          <p className='Projects__item-link' onClick={() => openPopup(4)}>Read more ›</p>
-          <a className='Projects__item-link' href='https://github.com/roeilulavy/PTT-websocket' target='_blank' rel='noreferrer'>View repository ›</a>
-        </div>
-        <img className='Projects__item-image' src={ptt_colage} alt='PTT' onClick={() => openPopup(4)} />
-      </div>
+        <li className='Projects__item'>
+          <div className='Projects__item-description'>
+            <h3 className='Projects__item-title'>PTT-Websocket</h3>
+            <h4 className='Projects__item-text'>A real-time communication PTT website.</h4>
+            <p className='Projects__item-link' onClick={() => openPopup(4)}>Read more ›</p>
+            <a className='Projects__item-link' href='https://github.com/roeilulavy/PTT-websocket' target='_blank' rel='noreferrer'>View repository ›</a>
+          </div>
+          <img className='Projects__item-image' src={ptt_colage} alt='PTT' onClick={() => openPopup(4)} />
+        </li>
+      </ul>
 
       <ImageSlider
         slides={slides}
@@ -180,6 +182,6 @@ export default function Projects() {
         setIsPopupOpen={setIsPopupOpen}
       />
 
-    </div>
+    </section>
   );
 }
