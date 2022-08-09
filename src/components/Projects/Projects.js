@@ -131,7 +131,7 @@ export default function Projects() {
       <h2 className='Projects__title'>What I've been working on</h2>
       <p className='Projects__text'>I like to stay busy and always have a project in the works. <br /> Take a look at some of my applications I've dedicated my time to.</p>
 
-      <ul>
+      <ul className='Projects__list'>
         <li className='Projects__item'>
           <div className='Projects__item-description'>
             <h3 className='Projects__item-title'>News‑explorer</h3>
