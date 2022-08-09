@@ -61,6 +61,7 @@
 .Projects__item-text {
   font-size: 1.1rem;
   line-height: 2rem;
+  font-weight: 400;
   color: rgb(105, 105, 105);
   margin: 0;
   padding: 20px 0;

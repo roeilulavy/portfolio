@@ -61,28 +61,36 @@ export default function ContactMe() {
   };
 
   return (
-    <div className='ContactMe'>
+    <section className='ContactMe'>
       <img className='ContactMe__background' src={Background} alt='' />
       <h2 className='ContactMe__title'>Contact Me</h2>
       <p className='ContactMe__text'>Lets Keep In Touch!</p>
       <div className='ContactMe__container'>
-        <div className='ContactMe__list-container'>
+        <aside className='ContactMe__list-container'>
           <div className='ContactMe__list-container1'>
             <h3 className='ContactMe__list-title'>View My Social</h3>
-            <div className='ContactMe__list'>
-              <a className='ContactMe__list-item' href='https://www.linkedin.com/in/roei-lulavy' target='_blank' rel='noreferrer'>
-                <img className='ContactMe__list-image' src={LinkedIn} alt='LinkedIn'/>
-              </a>
-              <a className='ContactMe__list-item' href='https://github.com/roeilulavy' target='_blank' rel='noreferrer'>
-                <img className='ContactMe__list-image' src={Github} alt='Github'/>
-              </a>
-              <a className='ContactMe__list-item' href='https://wa.me/972527001019' target='_blank' rel='noreferrer'>
-                <img className='ContactMe__list-image' src={Whatsapp} alt='Whatsapp'/>
-              </a>
-              <a className='ContactMe__list-item' href='mailto:roy.lulavy@gmail.com' target='_blank' rel='noreferrer'>
-                <img className='ContactMe__list-image' src={Email} alt='Email'/>
-              </a>
-            </div>
+            <ul className='ContactMe__list'>
+              <li className='ContactMe__list-item'>
+                <a href='https://www.linkedin.com/in/roei-lulavy' target='_blank' rel='noreferrer'>
+                  <img className='ContactMe__list-image' src={LinkedIn} alt='LinkedIn'/>
+                </a>
+              </li>
+              <li className='ContactMe__list-item'>
+                <a href='https://github.com/roeilulavy' target='_blank' rel='noreferrer'>
+                  <img className='ContactMe__list-image' src={Github} alt='Github'/>
+                </a>
+              </li>
+              <li className='ContactMe__list-item'>
+                <a href='https://wa.me/972527001019' target='_blank' rel='noreferrer'>
+                  <img className='ContactMe__list-image' src={Whatsapp} alt='Whatsapp'/>
+                </a>
+              </li>
+              <li className='ContactMe__list-item'>
+                <a href='mailto:roy.lulavy@gmail.com' target='_blank' rel='noreferrer'>
+                  <img className='ContactMe__list-image' src={Email} alt='Email'/>
+                </a>
+              </li>
+            </ul>
           </div>
           <div className='ContactMe__list-container1'>
             <h3 className='ContactMe__list-title'>View My Resume</h3>
@@ -90,7 +98,7 @@ export default function ContactMe() {
               <button className='ContactMe__list-button'>View</button>
             </a>
           </div>
-        </div>
+        </aside>
         <form className='ContactMe__form' ref={form} onSubmit={handleSubmit}>
           {done ? 
             <>
@@ -132,6 +140,6 @@ export default function ContactMe() {
           }
         </form>
       </div>
-    </div>
+    </section>
   );
 }

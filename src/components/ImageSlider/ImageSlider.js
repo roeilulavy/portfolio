@@ -43,7 +43,7 @@ export default function ImageSlider({ slides, title, subtitle, description, isPo
   };
 
   return (
-    <div className={`ImageSlider ${isPopupOpen && 'ImageSlider-open'}`}>
+    <popup className={`ImageSlider ${isPopupOpen && 'ImageSlider-open'}`}>
       <button className='ImageSlider__button' onClick={closePopup}></button>
       <div className='ImageSlider__image-container'>
         <div className='ImageSlider__left-arrow' onClick={goToPrev}>❮</div>
@@ -55,7 +55,7 @@ export default function ImageSlider({ slides, title, subtitle, description, isPo
           ))}
         </div>
       </div>
-      <div className='ImageSlider__text-container'>
+      <article className='ImageSlider__text-container'>
         <h1 className='ImageSlider__title'>{title}</h1>
         <h3 className='ImageSlider__subtitle'>{subtitle}</h3>
         <div className='ImageSlider__description'>
@@ -63,7 +63,7 @@ export default function ImageSlider({ slides, title, subtitle, description, isPo
             <p className='ImageSlider__text' key={textIndex}>{text}</p>
           ))}
         </div>
-      </div>      
-    </div>
+      </article>      
+    </popup>
   );
 }
