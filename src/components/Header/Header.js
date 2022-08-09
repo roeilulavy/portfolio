@@ -1,9 +1,57 @@
+import { useState } from 'react';
+import { Link } from 'react-scroll';
 import './Header.css';
 import Background from '../../images/Background/shape-bg.png';
+import MenuIcon from '../../images/Icons/menu_icon.png';
+import CloseIcon from '../../images/Icons/close_icon.png';
 
 export default function Header() {
+
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   return (
-    <header className='Header'>
+    <header className='Header' id='Home'>
+      <nav className='Header__navigation-container'>
+
+        <img className='Header__nav-burger_button' src={isMenuOpen ? CloseIcon : MenuIcon} alt='Menu' onClick={() => setIsMenuOpen(!isMenuOpen)}/>
+        {isMenuOpen &&
+          <ul className='Header__nav-burger'>
+            <li>
+              <Link className='Header__navigation-item' to="Home" smooth={true} offset={-50} duration={500} onClick={() => setIsMenuOpen(false)}>Home</Link>
+            </li>
+            <li>
+              <Link className='Header__navigation-item' to="About" smooth={true} offset={-50} duration={500} onClick={() => setIsMenuOpen(false)}>About</Link>
+            </li>
+            <li>
+              <Link className='Header__navigation-item' to="Skills" smooth={true} offset={-50} duration={500} onClick={() => setIsMenuOpen(false)}>Skills</Link>
+            </li>
+            <li>
+              <Link className='Header__navigation-item' to="Projects" smooth={true} offset={-50} duration={500} onClick={() => setIsMenuOpen(false)}>Projects</Link>
+            </li>
+            <li>
+              <Link className='Header__navigation-item' to="Contact" smooth={true} offset={-50} duration={500} onClick={() => setIsMenuOpen(false)}>Contact</Link>
+            </li>
+          </ul>
+        }
+
+        <ul className='Header__navigation'>
+          <li className='Header__navigation-item'>
+            <Link to="Home" smooth={true} offset={-50} duration={500}>Home</Link>
+          </li>
+          <li className='Header__navigation-item'>
+            <Link to="About" smooth={true} offset={-50} duration={500}>About</Link>
+          </li>
+          <li className='Header__navigation-item'>
+            <Link to="Skills" smooth={true} offset={-50} duration={500}>Skills</Link>
+          </li>
+          <li className='Header__navigation-item'>
+            <Link to="Projects" smooth={true} offset={-50} duration={500}>Projects</Link>
+          </li>
+          <li className='Header__navigation-item'>
+            <Link to="Contact" smooth={true} offset={-50} duration={500}>Contact</Link>
+          </li>
+        </ul>
+      </nav>
       <div className='Header__container'>
         <title className='Header__text-container'>
           <h2 className='Header__pre-title'>Hello, My name is</h2>

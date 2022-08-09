@@ -61,7 +61,7 @@ export default function ContactMe() {
   };
 
   return (
-    <section className='ContactMe'>
+    <section className='ContactMe' id='Contact'>
       <img className='ContactMe__background' src={Background} alt='' />
       <h2 className='ContactMe__title'>Contact Me</h2>
       <p className='ContactMe__text'>Lets Keep In Touch!</p>

@@ -43,7 +43,7 @@ export default function ImageSlider({ slides, title, subtitle, description, isPo
   };
 
   return (
-    <popup className={`ImageSlider ${isPopupOpen && 'ImageSlider-open'}`}>
+    <div className={`ImageSlider ${isPopupOpen && 'ImageSlider-open'}`}>
       <button className='ImageSlider__button' onClick={closePopup}></button>
       <div className='ImageSlider__image-container'>
         <div className='ImageSlider__left-arrow' onClick={goToPrev}>❮</div>
@@ -64,6 +64,6 @@ export default function ImageSlider({ slides, title, subtitle, description, isPo
           ))}
         </div>
       </article>      
-    </popup>
+    </div>
   );
 }

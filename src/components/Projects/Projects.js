@@ -127,7 +127,7 @@ export default function Projects() {
   }
 
   return (
-    <section className='Projects'>
+    <section className='Projects' id='Projects'>
       <h2 className='Projects__title'>What I've been working on</h2>
       <p className='Projects__text'>I like to stay busy and always have a project in the works. <br /> Take a look at some of my applications I've dedicated my time to.</p>
 
