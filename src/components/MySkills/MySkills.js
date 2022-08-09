@@ -14,7 +14,7 @@ import ANDROID from '../../images/Icons/android_icon.png';
 
 export default function MySkills() {
   return (
-    <article className='MySkills'>
+    <article className='MySkills' id='Skills'>
       <h2 className='MySkills__title'>My Skills</h2>
       <p className='MySkills__text'>Through my studies, I've gained a solid understanding of web development concepts, and have dedicated a lot of my free time to apply these concepts to real-world scenarios and applications.</p>
 
