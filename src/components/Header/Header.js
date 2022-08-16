@@ -11,9 +11,12 @@ export default function Header() {
 
   return (
     <header className='Header' id='Home'>
-      <nav className='Header__navigation-container'>
+      <nav className={`Header__navigation-container ${isMenuOpen && 'Header__navigation-container-open'}`} onClick={() => isMenuOpen && setIsMenuOpen(false)}>
 
-        <img className='Header__nav-burger_button' src={isMenuOpen ? CloseIcon : MenuIcon} alt='Menu' onClick={() => setIsMenuOpen(!isMenuOpen)}/>
+        <div className='Header__nav-burger_button__container'>
+            <img className='Header__nav-burger_button' src={isMenuOpen ? CloseIcon : MenuIcon} alt='Menu' onClick={() => setIsMenuOpen(!isMenuOpen)}/>
+        </div>
+        
         {isMenuOpen &&
           <ul className='Header__nav-burger'>
             <li>
