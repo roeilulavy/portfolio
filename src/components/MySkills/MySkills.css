@@ -36,7 +36,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   margin: 0;
   padding: 5px 0;
 }
@@ -44,12 +44,12 @@
 .MySkills__item-image {
   width: 70px;
   margin: 0;
-  padding: 10px 0;
+  padding: 5px 0;
 }
 
 .MySkills__item-text {
   font-size: 1.2rem;
-  line-height: 1.5rem;
+  line-height: 1.2rem;
   text-align: center;
 }
 
