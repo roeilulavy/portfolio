@@ -147,6 +147,7 @@ export default function Projects() {
             <h3 className='Projects__item-title'>Around The U.S </h3>
             <h4 className='Projects__item-text'>A social photos sharing website.</h4>
             <p className='Projects__item-link' onClick={() => openPopup(2)}>Read more ›</p>
+            <a className='Projects__item-link' href='https://roeilulavy.github.io/around-react/' target='_blank' rel='noreferrer'>View website ›</a>
             <a className='Projects__item-link' href='https://github.com/roeilulavy/around-react' target='_blank' rel='noreferrer'>View repository ›</a>
           </div>
           <img className='Projects__item-image' src={around_colage} alt='Around the U.S' onClick={() => openPopup(2)} />
@@ -157,6 +158,7 @@ export default function Projects() {
             <h3 className='Projects__item-title'>Pokedex</h3>
             <h4 className='Projects__item-text'>Explore and learn about variant of Pokemons.</h4>
             <p className='Projects__item-link' onClick={() => openPopup(3)}>Read more ›</p>
+            <a className='Projects__item-link' href='https://roeilulavy.github.io/react-pokedex/' target='_blank' rel='noreferrer'>View website ›</a>
             <a className='Projects__item-link' href='https://github.com/roeilulavy/react-pokedex' target='_blank' rel='noreferrer'>View repository ›</a>
           </div>
           <img className='Projects__item-image' src={pokedex_colage} alt='Pokedex' onClick={() => openPopup(3)} />
