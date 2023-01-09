@@ -234,7 +234,7 @@ export default function Projects() {
             </p>
             <a
               className="Projects__item-link"
-              href="https://roy-lulavy-weather-app.herokuapp.com/home"
+              href="https://roeilulavy.github.io/weather_app/"
               target="_blank"
               rel="noreferrer"
             >
